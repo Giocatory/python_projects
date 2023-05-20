@@ -1,5 +1,6 @@
-import hashlib
+s1 = "first"
+s2 = "second"
 
-match "hello world":
-    case "hello world" as f:
-        print(hashlib.sha256(f.encode()).hexdigest())
+s1, s2 = s2, s1 = s1, s2
+
+print(s1, s2)

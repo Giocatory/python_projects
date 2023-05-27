@@ -1,1 +1,8 @@
-print({i if i == 24 else 'ff': i*i for i in [j for j in range(100)] if i % 17 == 0}['ff'])
+res = []
+while True:
+    n = int(input())
+    if n == -1:
+        break
+    res.append(n)
+res.reverse()
+print(res[1:])

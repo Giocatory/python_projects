@@ -1,8 +1,1 @@
-print(
-    len(
-        {
-            i.replace('b','d',1) if i.startswith('b') else i.replace('c','')
-            for i in ['aa','bbb','cccc', 'bacbac'] if len(i) > 2
-        }
-    )
-)
+print({i if i == 24 else 'ff': i*i for i in [j for j in range(100)] if i % 17 == 0}['ff'])

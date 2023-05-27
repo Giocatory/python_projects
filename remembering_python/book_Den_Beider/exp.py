@@ -1,8 +1,5 @@
-res = []
-while True:
-    n = int(input())
-    if n == -1:
-        break
-    res.append(n)
-res.reverse()
-print(res[1:])
+from _decimal import Decimal
+
+a = Decimal("1.3")
+
+print(a)

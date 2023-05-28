@@ -1,4 +1,4 @@
-values_arr = ["text", 1, 1.5, 1j, object, True, [], {'one': 1}, {1, 2}, None, (), """""", range(10), b"10"]
+values_arr = ["text", 1, 1.5, 1j, object, True, [], {'one': 1}, {1, 2}, None, (), """""", range(10), b"/x10"]
 
 for i in values_arr:
     print(f"{i} is of type {type(i)}")
@@ -18,4 +18,42 @@ None is of type <class 'NoneType'>
  is of type <class 'str'>
 range(0, 10) is of type <class 'range'>
 b'10' is of type <class 'bytes'>
+"""
+
+"""
+Числовые типы:
+    int - целые числа
+    float - дробные числа
+    Decimal - десятичные числа, высокой точности
+    complex - комплексные числа
+
+Типы последовательности:
+    list - список
+    tuple - кортеж
+    range - последовательность
+
+Типы текстовой последовательности:
+    str - строка
+    
+Двоичные типы последовательностей:
+    bytes - байты
+    bytearray - байтовая последовательность
+    memoryview - память
+    
+Типы наборов:
+    set - множество
+    frozenset - неизменяемое множество
+
+Типы сопоставления:
+    dict - словарь
+    
+Типы аннотаций:
+    Generic Alias - генерируемый алиас
+    Union - объединение
+
+Тип файлов:
+    File - файл
+    
+Догический тип:
+    boolean - логический тип
 """

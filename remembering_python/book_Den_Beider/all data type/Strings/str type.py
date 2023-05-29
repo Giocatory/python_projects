@@ -24,3 +24,8 @@ print(len(var4))
 print(f"{var1} {var2};\n{var3}")
 # One Two;
 # Hello user
+
+# Строка байтов
+var_bits = b'\xd0\xbf\xd1\x20\xd0\xb8\xd0\xb2'
+print(var_bits)  # b'\xd0\xbf\xd1\x20\xd0\xb8\xd0\xb2'
+print(int.from_bytes(var_bits, 'big'))  # 15041971219311677618

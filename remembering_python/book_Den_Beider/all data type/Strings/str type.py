@@ -39,3 +39,15 @@ print(a)
 # otepad	ab-nine.exe
 print(b)  # C:\Windows\System32\notepad\tab-nine.exe
 print(c)  # C:\Windows\System32\notepad\tab-nine.exe
+
+# Цикл
+text = "Какой-то текст, не принципиально"
+for i in text:
+    print(i, end="")
+print()
+# Какой-то текст, не принципиально
+
+if "текст" in text[8:16]:
+    print("Текст есть")  # Текст есть
+else:
+    print("Текст нет")

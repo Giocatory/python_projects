@@ -19,3 +19,8 @@ print(var3[0:5])  # Hello
 # Длинна
 var4 = "abcdefghijklmnopqrstuvwxyz"  # 26
 print(len(var4))
+
+# f str
+print(f"{var1} {var2};\n{var3}")
+# One Two;
+# Hello user

@@ -29,3 +29,13 @@ print(f"{var1} {var2};\n{var3}")
 var_bits = b'\xd0\xbf\xd1\x20\xd0\xb8\xd0\xb2'
 print(var_bits)  # b'\xd0\xbf\xd1\x20\xd0\xb8\xd0\xb2'
 print(int.from_bytes(var_bits, 'big'))  # 15041971219311677618
+
+# Без экранирования
+a = "C:\Windows\System32\notepad\tabnine.exe"
+b = r"C:\Windows\System32\notepad\tab-nine.exe"
+c = "C:\\Windows\\System32\\notepad\\tab-nine.exe"
+print(a)
+# C:\Windows\System32
+# otepad	ab-nine.exe
+print(b)  # C:\Windows\System32\notepad\tab-nine.exe
+print(c)  # C:\Windows\System32\notepad\tab-nine.exe

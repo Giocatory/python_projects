@@ -54,11 +54,29 @@ print(lower_str.isspace())  # False
 print("\n".isspace())  # True
 
 #### s.istitle() - начинаются ли слова в строке с заглавной буквы
+not_title_str: str = "aS wf"
+title_str: str = "Sa Wf"
+print(not_title_str.istitle())  # False
+print(title_str.istitle())  # True
+
 #### s.upper() - преобразование символов строки в верхний регистр
+print("lower case".upper())  # LOWER CASE
+
 #### s.lower() - преобразование символов строки в нижний регистр
+print("UPPER CASE".lower())  # upper case
+
+str_to_how: str = "some text with show, how start and end"
 #### s.startwith(str) - начинается ли строка с шаблона str
 #### s.endwith(str) - заканчивается ли строка с шаблоном str
-#### s.join(список) - сборка строки из списка с разделителем s
+print(str_to_how.startswith("some"))  # True
+print(str_to_how.endswith("end"))  # True
+
+#### s.join(коллекция) - сборка строки из коллекции с разделителем s
+arr_for_joined: list = ["Hello", "user", "nice day"]
+tuple_for_joined: tuple = ("Hello", "user", "nice day")
+print("->".join(arr_for_joined))  # Hello->user->nice day
+print("->".join(tuple_for_joined))  # Hello->user->nice day
+
 #### s.capitalize() - переводит первый символ в верхний регистр, а остальные в нижний
 #### s.center(width, [fill]) - возвращает отцентрированную строку по краям которой стоят символы fill (по умолчанию пробел)
 #### s.ord(символ) - перевод символа в его код ASCII

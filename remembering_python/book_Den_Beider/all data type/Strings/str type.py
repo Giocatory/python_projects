@@ -1,8 +1,8 @@
 # Литералы строк
-var1: str = " "
-var2: str = ' '
-var3: str = """ """
-var4: str = ''' '''
+# var1: str = " "
+# var2: str = ' '
+# var3: str = """ """
+# var4: str = ''' '''
 
 # Concatenation
 var1 = "One"

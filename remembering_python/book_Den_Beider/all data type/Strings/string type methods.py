@@ -77,11 +77,26 @@ tuple_for_joined: tuple = ("Hello", "user", "nice day")
 print("->".join(arr_for_joined))  # Hello->user->nice day
 print("->".join(tuple_for_joined))  # Hello->user->nice day
 
+str_to_show_change_case: str = "some text with show, how go changed"
 #### s.capitalize() - переводит первый символ в верхний регистр, а остальные в нижний
+print(str_to_show_change_case.capitalize())  # Some text with show, how go changed
+
 #### s.center(width, [fill]) - возвращает отцентрированную строку по краям которой стоят символы fill (по умолчанию пробел)
+str_len: int = len(str_to_show_change_case)
+print( str_to_show_change_case.center(str_len * 2, "*") )
+# *****************some text with show, how go changed******************
+
 #### s.ord(символ) - перевод символа в его код ASCII
+print( ord("A") )  # 65
+
 #### s.chr(число) - код ASCII переводит в символ
+print( chr(65 + 1) )  # B
+
 #### s.count(str, [start], [end]) - возвращает количество вхождений str в строке. Можно в диапазоне
+str_for_show_count: str = "возвращает количество вхождений str в строке. Можно в диапазоне"
+print( str_for_show_count.count("о") )  # 8
+print( str_for_show_count.count("о", 11, 21) )  # 2 => "количество"
+
 #### s.expandtabs([tabsize]) - возвращает копию строки, в которой все символы табуляции заменяются одним или несколькоми пробелами. Если tabsize не указан, то 1 таб = 8 пробелов
 #### s.lstirp([chars]) - удаляет пробельные символы в начале строки
 #### s.rstrip([chars]) - удаляет пробельные символы в конце строки

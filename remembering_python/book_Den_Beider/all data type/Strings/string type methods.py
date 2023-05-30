@@ -98,13 +98,42 @@ print( str_for_show_count.count("о") )  # 8
 print( str_for_show_count.count("о", 11, 21) )  # 2 => "количество"
 
 #### s.expandtabs([tabsize]) - возвращает копию строки, в которой все символы табуляции заменяются одним или несколькоми пробелами. Если tabsize не указан, то 1 таб = 8 пробелов
+str_with_tabs: str = "I\tam\tuser"
+str_without_tabs: str = str_with_tabs.expandtabs(1)
+print( str_with_tabs )  # I	am	user
+print( str_without_tabs )  # I am user
+
+str_with_spaces: str = "!               text                   !"
 #### s.lstirp([chars]) - удаляет пробельные символы в начале строки
+print( str_with_spaces.lstrip("!").lstrip() )  # text                   !
+
 #### s.rstrip([chars]) - удаляет пробельные символы в конце строки
+print( str_with_spaces.rstrip("!").rstrip() )  # !               text
+
 #### s.strip([chars]) - удаляет пробельные символы в начале и конце
+print( str_with_spaces.strip("!").strip() )  # text
+
 #### s.partition(шаблон) - Возвращает кортеж, содержащий часть перед первым шаблоном, сам шаблон и часть после шаблона.
+str_for_partitions: str = "Returns a tuple containing the part before the first pattern, the pattern itself, and the part after the pattern"
+print( str_for_partitions.partition("the pattern itself") )
+# ('Returns a tuple containing the part before the first pattern, ', 'the pattern itself', ', and the part after the pattern')
 #### Если шаблон не найден, то вернет текст и две пустые строки
+str_for_partition_lose: str = "Returns a tuple containing the part before the first pattern"
+print( str_for_partition_lose.partition("the pattern itself") )
+#('Returns a tuple containing the part before the first pattern', '', '')
+
 #### s.swapcase() - переводит символы строки в противоположный регистр
+str_for_swap: str = "FirSt wOrD"
+print( str_for_swap.swapcase() )  # fIRsT WoRd
+
 #### s.title() - переводит первую букву каждого слова в верхний регистр, остальные в нижний
+str_convert_to_title: str = "the pattern itself, and the part after the pattern"
+print( str_convert_to_title.title() )  # The Pattern Itself, And The Part After The Pattern
+
+str_to_fill_and_just: str = "welcome"
 #### s.zfill(width) - делает строку длинной не менее width, по необходимости заполняя первые символы нулями
+print( str_to_fill_and_just.zfill(21) )  # 00000000000000welcome
 #### s.ljust(width, fillchar="") - делает строку не менее width, по необходимости заполняя последние символы, символом fillchar
+print( str_to_fill_and_just.ljust(21, "*") )  # welcome**************
 #### s.rjust(width, fillchar="") - делает строку не менее width, по необходимости заполняя первые символы, символом fillchar
+print( str_to_fill_and_just.rjust(21, "*") )  # **************welcome

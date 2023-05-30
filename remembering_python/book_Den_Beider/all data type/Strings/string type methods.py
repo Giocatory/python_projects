@@ -41,27 +41,37 @@ print(some_text_words_nums.isalnum())  # True
 print(some_text_words.isalnum())  # True
 print(some_text_nums.isalnum())  # True
 
-#### s.islower()
-#### s.isupper()
-#### s.isspace()
-#### s.istitle()
-#### s.upper()
-#### s.lower()
-#### s.startwith()
-#### s.endwith()
-#### s.join(список)
-#### s.capitalize()
-#### s.center(width, [fill])
-#### s.ord(символ)
-#### s.chr(число)
-#### s.count(str, [start], [end])
-#### s.expandtabs([tabsize])
-#### s.lstirp([chars])
-#### s.rstrip([chars])
-#### s.strip([chars])
-#### s.partition(шаблон)
-#### s.swapcase()
-#### s.title()
-#### s.zfill(width)
-#### s.ljust(width, fillchar="")
-#### s.rjust(width, fillchar="")
+#### s.islower() - состоит ли строка из символов нижнего регистра
+#### s.isupper() - состоит ли строка из символов верхнего регистра
+lower_str: str = 'abc def'
+upper_str: str = 'ABC DEF'
+print(lower_str.islower())  # True
+print(lower_str.isupper())  # False
+print(upper_str.isupper())  # True
+
+#### s.isspace() - состоит ли строка из неотображаемых символов (\t,\n,\r,\f,\v,[space])
+print(lower_str.isspace())  # False
+print("\n".isspace())  # True
+
+#### s.istitle() - начинаются ли слова в строке с заглавной буквы
+#### s.upper() - преобразование символов строки в верхний регистр
+#### s.lower() - преобразование символов строки в нижний регистр
+#### s.startwith(str) - начинается ли строка с шаблона str
+#### s.endwith(str) - заканчивается ли строка с шаблоном str
+#### s.join(список) - сборка строки из списка с разделителем s
+#### s.capitalize() - переводит первый символ в верхний регистр, а остальные в нижний
+#### s.center(width, [fill]) - возвращает отцентрированную строку по краям которой стоят символы fill (по умолчанию пробел)
+#### s.ord(символ) - перевод символа в его код ASCII
+#### s.chr(число) - код ASCII переводит в символ
+#### s.count(str, [start], [end]) - возвращает количество вхождений str в строке. Можно в диапазоне
+#### s.expandtabs([tabsize]) - возвращает копию строки, в которой все символы табуляции заменяются одним или несколькоми пробелами. Если tabsize не указан, то 1 таб = 8 пробелов
+#### s.lstirp([chars]) - удаляет пробельные символы в начале строки
+#### s.rstrip([chars]) - удаляет пробельные символы в конце строки
+#### s.strip([chars]) - удаляет пробельные символы в начале и конце
+#### s.partition(шаблон) - Возвращает кортеж, содержащий часть перед первым шаблоном, сам шаблон и часть после шаблона.
+#### Если шаблон не найден, то вернет текст и две пустые строки
+#### s.swapcase() - переводит символы строки в противоположный регистр
+#### s.title() - переводит первую букву каждого слова в верхний регистр, остальные в нижний
+#### s.zfill(width) - делает строку длинной не менее width, по необходимости заполняя первые символы нулями
+#### s.ljust(width, fillchar="") - делает строку не менее width, по необходимости заполняя последние символы, символом fillchar
+#### s.rjust(width, fillchar="") - делает строку не менее width, по необходимости заполняя первые символы, символом fillchar

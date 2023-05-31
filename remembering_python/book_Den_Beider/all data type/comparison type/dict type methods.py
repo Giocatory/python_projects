@@ -37,10 +37,14 @@ user_info = {
 print(user_info.get("name", "not admin"))  # Admin
 print(user_info.get("proxy", "computer with auto proxy"))  # computer with auto proxy
 
-##### dict.items()
-##### dict.keys()
-##### dict.values()
-##### dict.pop(key, *default)
-##### dict.popitem()
-##### dict.setdefault(key, *default)
-##### dict.update([other])
+##### dict.items() - возвращает пары (ключ, значение)
+##### dict.keys() - возвращает ключи словаря
+##### dict.values() - возвращает значения ключей словаря
+##### dict.pop(key, *default) - удаляет ключ и возвращает значение. Если ключа нет возвращает default
+# по умолчанию (если default не указан) выбрасывает исключение
+##### dict.popitem() - удаляет и возвращает пару (ключ, значение). Если словарь пуст, то исключение
+##### dict.setdefault(key, *default) - возвращает значение ключа, но если его нет, то не бросает
+# исключение, а создает новый ключ со значением default (по умолчанию None)
+##### dict.update([other]) - обновляет словарь, добавляя пары (ключ, значение) из other
+# СУЩЕСТВУЮЩИЕ КЛЮЧИ ПЕРЕЗАПИСЫВАЮТСЯ!!!!
+# Возвращает None (а не новый словарь!!!!)

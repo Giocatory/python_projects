@@ -40,3 +40,18 @@ set_diff_two_result = set_diff_two - set_diff_one
 print(set_diff_one_result)  # {8, 2, 4, 6}
 print(set_diff_two_result)  # {9, 13, 5}
 
+##### set.symmetric_difference(set2) - Возвращает все элементы, кроме общих
+# можно еще записывать так: set1 ^ set2
+set_symmetric_one = {1, 2, 3, 4, 6, 7, 8, 11}  # len = 8
+set_symmetric_two = {1, 3, 7, 5, 9, 11, 13}  # len = 7
+set_symmetric_result = set_symmetric_one ^ set_symmetric_two
+print(set_symmetric_result)  # {2, 4, 5, 6, 8, 9, 13}
+
+##### set.issubset(set2) - является ли текущее множество подмножеством
+##### set.issuperset(set2) - является ли текущее множество надмножеством
+sub_common = {1,2,3,4,5,6,7,8,9,10}
+sub_one = {1,2,3,4,5}
+sub_two = {11,12,13,14}
+print(sub_one.issubset(sub_common))  # True
+print(sub_two.issubset(sub_common))  # False
+print(sub_common.issuperset(sub_one))  # True

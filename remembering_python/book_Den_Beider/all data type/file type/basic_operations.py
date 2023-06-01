@@ -29,7 +29,7 @@ with open(path, "r", encoding="utf-8") as file:
 print("\n\n")
 
 # лучше использовать readlines()
-with open(path, "r", encoding="utf-8") as file:
+with open(path, "r+", encoding="utf-8") as file:
     text_in_file = file.readlines()  # возвратит массив, элементы = строки
     for line in text_in_file:
         print(line, end="")

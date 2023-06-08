@@ -1,7 +1,13 @@
-s = "one=1 two=2 three=3".split(" ")
+s = "+71234567890 +71234567854 +61234576890 +52134567890 +21235777890 +21234567110 +71232267890".split(" ")
+s.sort()
 
-arr = [s[i].split('=') for i in range(len(s))]
-d = dict(arr)
-for key in d:
-    d[key] = int(d[key])
+s = [[i[0:2], i[2::]] for i in s]
+d = {}
+
+for i in s:
+    if i[0] not in d:
+        d[i[0]] = [i[1]]
+    else:
+        d[i[0]].append(i[1])
+
 print(*sorted(d.items()))

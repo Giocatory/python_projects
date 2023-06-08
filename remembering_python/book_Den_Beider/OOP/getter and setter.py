@@ -3,10 +3,10 @@ from abc import ABC, abstractclassmethod
 
 class People(ABC):
     @abstractclassmethod
-    def __init__(self, name, age, gender):
-        self.__name = name
-        self.__age = age
-        self.__gender = gender
+    def __init__(cls, name, age, gender):
+        cls.__name = name
+        cls.__age = age
+        cls.__gender = gender
     
     # getter
     @property
@@ -37,7 +37,7 @@ class Employer(People):
     
     # setter
     @employment.setter
-    def employment(self, emp: str) -> str:
+    def employment(self, emp) -> None:
         self.__employment = emp
     
     # getter
@@ -47,15 +47,16 @@ class Employer(People):
     
     # setter
     @salary.setter
-    def salary(self, salary: float) -> float:
+    def salary(self, salary) -> None:
         self.__salary = salary
     
     # dunder str
     def __str__(self) -> str:
-        return f"Employ info: {self.name} is {self.age} ({self.gender})\n\tEmployment: {self.__employment}\n\tSalary: {self.__salary}\n"
+        return f"Employ info: \n\t{self.name} is {self.age} ({self.gender})\n\tEmployment: {self.__employment}" \
+               f"\n\tSalary: \n\t{self.__salary}\n"
 
 
-first_worker = Employer("Mikhail", 35, "Male", "System Administrator", "3000")
+first_worker = Employer("Mikhail", 35, "Male", "System Administrator", "40000")
 second_worker = Employer("Alejandro", 30, "Male")
 second_worker.salary = 28300.52
 

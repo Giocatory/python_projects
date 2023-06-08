@@ -10,4 +10,4 @@ for i in s:
     else:
         d[i[0]].append(i[1])
 
-print(*sorted(d.items()))
+print(*sorted(d.items()),sep="\n")

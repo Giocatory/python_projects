@@ -1,3 +1,3 @@
-s = "Петя Варвара Венера Василиса Василий Федор"
-r = tuple(filter(lambda x: "ва" in x, s.lower().split(" ")))
+n = [int(i) for i in input().split()]
+r = [i for i in range(len(n)) if n.count(n[i]) > 1]
 print(*r)

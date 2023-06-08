@@ -1,3 +1,7 @@
-n = [int(i) for i in input().split()]
-r = [i for i in range(len(n)) if n.count(n[i]) > 1]
-print(*r)
+s = set()
+while True:
+    t = input()
+    if t == "q":
+        break
+    s.add(t)
+print(len(s))

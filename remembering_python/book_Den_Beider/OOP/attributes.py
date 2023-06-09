@@ -21,6 +21,7 @@ obj = Any()
 
 print(obj.a)  # 55
 print(obj.b)  # 66
+print(Any.b)  # 66
 
 # 3 Private Attr
 class Priv_attr:

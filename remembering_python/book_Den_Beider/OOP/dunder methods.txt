@@ -1,5 +1,5 @@
 Создание и удаление объектов
-1) __new__(cls, [,...])
+1) __new__(cls, [,...]) - метод
 2) __init__(self, [...])
 3) __init_subclass__(cls)
 
@@ -18,3 +18,63 @@
 6) __ge__(self, other)
 7) __hash__(self)
 8) __bool__(self)
+
+Доступ к аттрибутам оюъекта
+1) __getattr__(self, name)
+2) __setattr__(self, name, value)
+3) __delattr__(self, name)
+4) __dir__(self)
+
+Создание последоватльностей
+1) __len__(self)
+2) __getitem__(self, key)
+3) __setitem__(self, key, value)
+4) __delitem__(self, key)
+5) __missing__(self, key)
+6) __iter__(self)
+7) __reversed__(self)
+8) __contains__(self, item)
+
+
+                Числовые магические методы
+Унарные операторы
+1) __neg__(self)
+2) __pos__(self)
+3) __abs__(self)
+4) __invert__(self)
+
+Обычные арифметические операторы
+1) __add__(self, other)
+2) __sub__(self, other)
+3) __mul__(self, other)
+4) __matmul__(self, other)
+5) __truediv__(self, other)
+6) __floordiv__(self, other)
+7) __mod__(self, other)
+8) __divmod__(self, other)
+9) __pow__(self, other[, modulo])
+10) __lshift__(self, other)
+11) __rshift__(self, other)
+12) __and__(self, other)
+13) __xor__(self, other)
+14) __or__(self, other)
+
+Преобразование типов
+1) __complex__(self)
+2) __int__(self)
+3) __float__(self)
+4) __index__(self)
+5) __round__(self, [, ndigits])
+6) __trunc__(self)
+7) __floor__(self)
+8) __ceil__(self)
+
+Вызываемые объекты
+1) __call__(self, [, args])
+2) __await__(self)
+
+Контекстные менеджеры
+1) __enter__(self)
+2) __exit__(self, exc_type, exc_value, traceback)
+3) __aenter__(self)
+4) __aexit__(self, exc_type, exc_value, traceback)

@@ -62,18 +62,16 @@
 Обычные арифметические операторы
 1) __add__(self, other) - сложение, оператор +
 2) __sub__(self, other) - вычитание, оператор -
-3) __mul__(self, other)
-4) __matmul__(self, other)
-5) __truediv__(self, other)
-6) __floordiv__(self, other)
-7) __mod__(self, other)
-8) __divmod__(self, other)
-9) __pow__(self, other[, modulo])
-10) __lshift__(self, other)
-11) __rshift__(self, other)
-12) __and__(self, other)
-13) __xor__(self, other)
-14) __or__(self, other)
+3) __mul__(self, other) - умножение, оператор *
+4) __matmul__(self, other) - умножение матриц, оператор @
+5) __truediv__(self, other) - деление, оператор /
+6) __floordiv__(self, other) - целочисленное деление, оператор //
+7) __mod__(self, other) - остаток от деления, оператор %
+8) __divmod__(self, other) - деление с остатком, опрееделяет поведение для свтроенной функции divmod(...)
+9) __pow__(self, other[, modulo]) - возведение в степень, оператор **
+10) __and__(self, other) - двоичное И, оператор &
+11) __xor__(self, other) - исключающее ИЛИ, оператор ^
+12) __or__(self, other) - двоичное ИЛИ, оператор |
 
 Преобразование типов
 1) __complex__(self)

@@ -74,21 +74,22 @@
 12) __or__(self, other) - двоичное ИЛИ, оператор |
 
 Преобразование типов
-1) __complex__(self)
-2) __int__(self)
-3) __float__(self)
-4) __index__(self)
-5) __round__(self, [, ndigits])
-6) __trunc__(self)
-7) __floor__(self)
-8) __ceil__(self)
+1) __complex__(self) - преобразование типа в комплексное число
+2) __int__(self) - преобразование типа к int
+3) __float__(self) - преобразование к типу float
+4) __index__(self) - преобразование к типу int, кошда объект используется в срезах (выражения вида [start:stop:step])
+5) __round__(self, [, ndigits]) - округление числа с помощью функции round(...)
+6) __trunc__(self) - вызывается методом math.trunc(...)
+7) __floor__(self)  - вызывается методом math.floor(...)
+8) __ceil__(self) -  - вызывается методом math.ceil(...)
 
 Вызываемые объекты
-1) __call__(self, [, args])
-2) __await__(self)
+1) __call__(self, [, args]) - позволяет любому экземпляру класса вести себя, как обычная функция.
+2) __await__(self) - возвращает итератор, превращая класс в корутину, результат выполнения которой можно получить с
+помощью await.
 
 Контекстные менеджеры
-1) __enter__(self)
-2) __exit__(self, exc_type, exc_value, traceback)
-3) __aenter__(self)
-4) __aexit__(self, exc_type, exc_value, traceback)
+1) __enter__(self) - определяет начало блока контекстного менеджера, вызванного с помощью with
+2) __exit__(self, exc_type, exc_value, traceback) - определяет конец блока контекстного менеджера
+3) __aenter__(self) - аналогично __enter__, только функция возвращает корутину
+4) __aexit__(self, exc_type, exc_value, traceback) - аналогично __exitt__, только функция возвращает корутину

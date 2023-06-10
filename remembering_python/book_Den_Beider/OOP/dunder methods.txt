@@ -1,0 +1,20 @@
+Создание и удаление объектов
+1) __new__(cls, [,...])
+2) __init__(self, [...])
+3) __init_subclass__(cls)
+
+Общие свойства объектов
+1) __repr__(self)
+2) __str__(self)
+3) __bytes__(self)
+4) __format__(self, format_spec)
+
+Методы сравнивания объектов между собой
+1) __lt__(self, other)
+2) __le__(self, other)
+3) __eq__(self, other)
+4) __ne__(self, other)
+5) __gt__(self, other)
+6) __ge__(self, other)
+7) __hash__(self)
+8) __bool__(self)

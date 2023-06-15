@@ -14,7 +14,6 @@ print(os_info)
     # )
 print(os_info[0])  # Linux
 
-# env
+# environment variable dictionary. Changeable (environment variables can be added and removed)
 env_list = os.environ
-for i in env_list:
-    print(i)
+print(*env_list, sep="; ")

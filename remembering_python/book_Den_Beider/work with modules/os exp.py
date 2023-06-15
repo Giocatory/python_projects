@@ -16,6 +16,7 @@ print(os_info[0])  # Linux
 
 # environment variable dictionary. Changeable (environment variables can be added and removed)
 env_list = os.environ
+env_list["INSIDE_NEMO_PYTHON"] = "/bin/python3"
 print(*env_list, sep="; ")
 # SHELL; SESSION_MANAGER; QT_ACCESSIBILITY; COLORTERM; XDG_CONFIG_DIRS; XDG_SESSION_PATH; 
 # TERM_PROGRAM_VERSION; GNOME_DESKTOP_SESSION_ID; CONDA_EXE; _CE_M; LANGUAGE; SSH_AUTH_SOCK; 
@@ -32,3 +33,9 @@ print(*env_list, sep="; ")
 print()
 print(env_list["SHELL"])  # /bin/bash
 print(env_list["INSIDE_NEMO_PYTHON"])
+
+# login user
+name = os.getlogin()
+print(name)  # gio*****
+
+print(os.getpid())  # 87282

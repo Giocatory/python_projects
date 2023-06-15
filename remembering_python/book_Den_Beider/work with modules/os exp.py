@@ -35,7 +35,7 @@ print(env_list["SHELL"])  # /bin/bash
 print(env_list["INSIDE_NEMO_PYTHON"])
 
 # login user
-name = os.getlogin()
-print(name)  # gio*****
+# name = os.getlogin()
+# print(name)  # gio*****
 
 print(os.getpid())  # 87282

@@ -39,3 +39,5 @@ print(env_list["INSIDE_NEMO_PYTHON"])  # /bin/python3
 # print(name)  # gio*****
 
 print(os.getpid())  # 87282
+
+print(os.system("uname -a"))  # Linux giocatory 5.15.0-73-generic #80-Ubuntu SMP Mon May 15 15:18:26 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux

@@ -32,7 +32,7 @@ print(*env_list, sep="; ")
 # DBUS_SESSION_BUS_ADDRESS; GIO_LAUNCHED_DESKTOP_FILE_PID; GIO_LAUNCHED_DESKTOP_FILE; TERM_PROGRAM;
 print()
 print(env_list["SHELL"])  # /bin/bash
-print(env_list["INSIDE_NEMO_PYTHON"])
+print(env_list["INSIDE_NEMO_PYTHON"])  # /bin/python3
 
 # login user
 # name = os.getlogin()

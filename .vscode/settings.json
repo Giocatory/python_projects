@@ -270,6 +270,7 @@
         "listdir",
         "LOGNAME",
         "makedirs",
+        "mypackage",
         "NEMO",
         "nodename",
         "normcase",

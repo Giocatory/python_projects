@@ -21,6 +21,7 @@ def searchBinary(myList, item):
 
 
 myList = [random.randint(-100, 100) for i in range(100000)]
+myList.sort()
 print(searchBinary(myList, 50))
 
 

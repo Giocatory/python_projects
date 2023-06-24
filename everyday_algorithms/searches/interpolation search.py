@@ -1,6 +1,5 @@
 # Interpolation search
 def intPolsearch(arr, target):
-    index = 0
     low = 0
     high = len(arr) - 1
     found = False

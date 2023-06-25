@@ -2,12 +2,14 @@
 import heapq
 
 
+# 1
 nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 
 print(heapq.nlargest(3, nums))  # [42, 37, 23]
 print(heapq.nsmallest(3, nums))  # [-4, 1, 2]
 
 
+# 2
 portfolio = [
     {'name': 'IBM', 'shares': 100, 'price': 91.1},
     {'name': 'AAPL', 'shares': 50, 'price': 543.22},
@@ -32,3 +34,19 @@ print(expensive)
     # {'name': 'ACME', 'shares': 75, 'price': 115.65}, 
     # {'name': 'IBM', 'shares': 100, 'price': 91.1}
 # ]
+
+
+# 3
+prices = {
+    'ACME': 45.23,
+    'AAPL': 612.78,
+    'IBM': 205.55,
+    'HPQ': 37.20,
+    'FB': 10.75
+}
+
+min_price = min(zip(prices.values(), prices.keys()))
+max_price = max(zip(prices.values(), prices.keys()))
+
+print(min_price)  # (10.75, 'FB')
+print(max_price)  # (612.78, 'AAPL')

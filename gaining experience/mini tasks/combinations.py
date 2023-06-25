@@ -31,3 +31,21 @@ for comb in permutations(items):
 # ('d', 'b', 'c', 'a')
 # ('d', 'c', 'a', 'b')
 # ('d', 'c', 'b', 'a')
+
+# или с 2 элементами (к примеру)
+
+for comb in permutations(items, 2):
+    print(comb)
+
+# ('a', 'b')
+# ('a', 'c')
+# ('a', 'd')
+# ('b', 'a')
+# ('b', 'c')
+# ('b', 'd')
+# ('c', 'a')
+# ('c', 'b')
+# ('c', 'd')
+# ('d', 'a')
+# ('d', 'b')
+# ('d', 'c')

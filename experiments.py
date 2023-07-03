@@ -1,5 +1,4 @@
-import math
+import calendar
 
-
-print(math.factorial(5))  # 120
-print(math)
+c = calendar.LocaleTextCalendar(0)
+c.prmonth(2023, 7, 4)
